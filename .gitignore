@@ -33,3 +33,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 # More ignore
 vendor/sneat-1.0.0
+readme.rst
