@@ -88,17 +88,158 @@
                             >
                           </div>
                           <div class="tab-content px-0 mt-0">
+                            <!-- Profile -->
                             <div class="tab-pane fade show active" id="horizontal-profile">
                               <!-- Start -->
-                              Hello welcome! Text here
+                              <div class="col-lg col-md col-sm">
+                      
+                                <div class="demo-inline-spacing mt-3">
+                                <ul class="list-group">
+                                  <li class="list-group-item d-flex align-items-center">
+                                    <i class="bx bx-face me-2"></i>
+                                    <div class="row col">
+                                      <div class="col-4">
+                                        Birthday
+                                      </div>
+                                      <div class="col-1">
+                                        :
+                                      </div>
+                                      <div class="col-7">
+                                        10 Oktober 1997
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item d-flex align-items-center">
+                                    <i class="bx bx-pin me-2"></i>
+                                    <div class="row col">
+                                      <div class="col-4">
+                                        Address
+                                      </div>
+                                      <div class="col-1">
+                                        :
+                                      </div>
+                                      <div class="col-7">
+                                        Jl. Kenangan no.1
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item d-flex align-items-center">
+                                    <i class="bx bx-tag me-2"></i>
+                                    <div class="row col">
+                                      <div class="col-4">
+                                        Employe Status
+                                      </div>
+                                      <div class="col-1">
+                                        :
+                                      </div>
+                                      <div class="col-7">
+                                        Contract
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item d-flex align-items-center">
+                                    <i class="bx bx-laptop me-2"></i>
+                                    <div class="row col">
+                                      <div class="col-4">
+                                        Division
+                                      </div>
+                                      <div class="col-1">
+                                        :
+                                      </div>
+                                      <div class="col-7">
+                                        IT Support
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                               <!-- End -->
                             </div>
+                            <!-- End -->
+                            <!-- Tab message -->
                             <div class="tab-pane fade" id="horizontal-messages">
-                              Hello Welcome! Text here
+                              No message here
                             </div>
+                            <!-- End -->
+                            <!-- Tab connection -->
                             <div class="tab-pane fade" id="horizontal-settings">
-                              Hello Welcome! Text here
+                              <div class="col-lg col-md col-sm col-12">
+                                <div class="card">
+                                  <h5 class="card-header">Accounts connection</h5>
+                                  <div class="card-body">
+                                    <!-- Facebook -->
+                                    <div class="d-flex mb-3">
+                                      <div class="flex-shrink-0">
+                                          <img
+                                            src="<?= base_url('assets/'); ?>img/icons/brands/facebook.png"
+                                            alt="facebook"
+                                            class="me-3"
+                                            height="30"
+                                          />
+                                      </div>
+                                      <div class="flex-grow-1 row">
+                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
+                                          <h6 class="mb-0">Facebook</h6>
+                                          <small class="text-muted">Not Connected</small>
+                                        </div>
+                                        <div class="col-4 col-sm-5 text-end">
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class="bx bx-link-alt"></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Twitter -->
+                                    <div class="d-flex mb-3">
+                                      <div class="flex-shrink-0">
+                                          <img
+                                            src="<?= base_url('assets/'); ?>img/icons/brands/twitter.png"
+                                            alt="twitter"
+                                            class="me-3"
+                                            height="30"
+                                          />
+                                      </div>
+                                      <div class="flex-grow-1 row">
+                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
+                                          <h6 class="mb-0">Twitter</h6>
+                                          <small class="text-muted">Not Connected</small>
+                                        </div>
+                                        <div class="col-4 col-sm-5 text-end">
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class="bx bx-link-alt"></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Instagram -->
+                                    <div class="d-flex mb-3">
+                                      <div class="flex-shrink-0">
+                                          <img
+                                            src="<?= base_url('assets/'); ?>img/icons/brands/instagram.png"
+                                            alt="instagram"
+                                            class="me-3"
+                                            height="30"
+                                          />
+                                      </div>
+                                      <div class="flex-grow-1 row">
+                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
+                                          <h6 class="mb-0">Instagram</h6>
+                                          <small class="text-muted">Not Connected</small>
+                                        </div>
+                                        <div class="col-4 col-sm-5 text-end">
+                                          <button type="button" class="btn btn-icon btn-outline-secondary">
+                                            <i class="bx bx-link-alt"></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- End -->
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                            <!-- End -->
                           </div>
                         </div>
                       </div>

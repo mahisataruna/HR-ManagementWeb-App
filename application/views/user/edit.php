@@ -20,13 +20,9 @@
                     <li class="nav-item">
                       <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Account</a>
                     </li>
+                    
                     <li class="nav-item">
-                      <a class="nav-link" href="pages-account-settings-notifications.html"
-                        ><i class="bx bx-bell me-1"></i> Notifications</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages-account-settings-connections.html"
+                      <a class="nav-link" href="<?= base_url('user/connection'); ?>"
                         ><i class="bx bx-link-alt me-1"></i> Connections</a
                       >
                     </li>
@@ -37,7 +33,7 @@
                     <div class="card-body">
                       <div class="d-flex align-items-start align-items-sm-center gap-4">
                         <img
-                          src="../assets/img/avatars/1.png"
+                          src="<?= base_url('assets/img/profile/') . $user['image']; ?>"
                           alt="user-avatar"
                           class="d-block rounded"
                           height="100"
@@ -102,8 +98,10 @@
                           </div>
                         </div>
                         <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                          <button type="submit" class="btn btn-primary">
+                                <i class="bx bx-memory-card me-1"></i>
+                                Save changes
+                            </button>
                         </div>
                       </form>
                     </div>
