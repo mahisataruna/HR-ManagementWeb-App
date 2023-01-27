@@ -59,15 +59,8 @@
                           </div>
                           <div class="flex-grow-1">
                             <span class="fw-semibold d-block"><?= $user['name']; ?></span>
-                            <small class="text-muted">
-                              <?php 
-                                if ($user['role_id'] ==1) {
-                                  echo 'Admin';
-                                } else {
-                                  echo 'Employe';
-                                }
-                              ?>
-                            </small>
+                            <small class="text-muted"><?= $user['email']; ?></small>
+                            
                           </div>
                         </div>
                       </a>

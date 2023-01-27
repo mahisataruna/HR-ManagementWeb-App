@@ -108,6 +108,7 @@
 
     <!-- Page JS -->
     <script src="<?= base_url('assets/'); ?>js/dashboards-analytics.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/ui-popover.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

@@ -11,7 +11,7 @@
                 <img src="<?= base_url('assets/img/profile/sch.jpg') ?>" style="width: 50px">
               </span>
               <!-- End -->
-              <span class="app-brand-text demo menu-text ms-2">HR-webApp</span>
+              <span class="app-brand-text menu-text ms-2">HR-Management</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -39,13 +39,13 @@
             </li>
 
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="<?= base_url('user'); ?>" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Analytics">Profile</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="<?= base_url('user/edit'); ?>" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-edit"></i>
                 <div data-i18n="Analytics">Edit Profile</div>
               </a>
@@ -59,7 +59,7 @@
 
             
             <!-- Misc -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Menu</span></li>
             <li class="menu-item">
               <a
                 href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
