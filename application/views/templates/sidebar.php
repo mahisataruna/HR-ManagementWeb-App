@@ -22,64 +22,59 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
+            <!-- Query menu -->
+
+            <?php 
+            $role_id = $this->session->userdata('role_id');
+            $queryMenu = "SELECT `user_menu`.`id`, `menu`
+                            FROM `user_menu` JOIN `user_access_menu`
+                              ON `user_menu`.`id` = `user_access_menu`.`menu_id`
+                           WHERE `user_access_menu`.`role_id` = $role_id
+                        ORDER BY `user_access_menu`.`menu_id` ASC
+                        ";
+            $menu = $this->db->query($queryMenu)->result_array();            
+            ?>
+
+            <!-- Looping menu -->
+            <?php foreach ($menu as $m) : ?>
+            <!-- End -->
             <!-- Dashboard -->
             <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Admin</span>
+              <span class="menu-header-text">
+                <?= $m['menu']; ?>
+              </span>
             </li>
-            <li class="menu-item active">
-              <a href="<?= base_url('admin'); ?>" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-              </a>
-            </li>
+            <!-- Looping SubMenu -->
+            <?php
+              $menuId = $m['id'];
+              $querySubMenu = "SELECT *
+                               FROM `user_sub_menu` JOIN `user_menu`
+                               ON `user_sub_menu`.`menu_id` = `user_menu`.`id`
+                               WHERE `user_sub_menu`.`menu_id` = $menuId 
+                               AND `user_sub_menu`.`is_active` = 1   
+                              ";
+              $subMenu = $this->db->query($querySubMenu)->result_array();                
+            ?>
 
+            <?php foreach ($subMenu as $sm) :?>
+                    <?php if ($title == $sm['title']) : ?>  
+                    <!-- Nav Item - Dashboard -->
+                    <li class="menu-item active">
+                      <?php else : ?>
+                    <li class="menu-item">
+                      <?php endif ; ?>
 
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">User</span>
-            </li>
-
-            <li class="menu-item">
-              <a href="<?= base_url('user'); ?>" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-user"></i>
-                <div data-i18n="Analytics">Profile</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="<?= base_url('user/edit'); ?>" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-edit"></i>
-                <div data-i18n="Analytics">Edit Profile</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-lock"></i>
-                <div data-i18n="Analytics">Change Password</div>
-              </a>
-            </li>
-
+                      <a href="<?= base_url($sm['url']); ?>" class="menu-link">
+                      <i class="<?= $sm['icon']; ?>"></i>
+                      <div data-i18n="Analytics"><?= $sm['title']; ?></div>
+                  </a>
+              </li>    
+                    <!--  -->
+                        
+              <?php endforeach; ?>
+              
+            <?php endforeach; ?>
             
-            <!-- Misc -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Menu</span></li>
-            <li class="menu-item">
-              <a
-                href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                target="_blank"
-                class="menu-link"
-              >
-                <i class="menu-icon tf-icons bx bx-support"></i>
-                <div data-i18n="Support">Support</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a
-                href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                target="_blank"
-                class="menu-link"
-              >
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Documentation">Documentation</div>
-              </a>
-            </li>
           </ul>
         </aside>
         <!-- / Menu -->
