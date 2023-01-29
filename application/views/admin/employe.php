@@ -21,6 +21,7 @@
             <div class="col-lg-12 col-md col-sm col">
                 <div class="card">
                     <h5 class="card-header">Employes Data</h5>
+                    
                     <div class="card-body">
                         <div class="table-responsive text-nowrap" style="height: 250px">
                             <table class="table table-bordered">
@@ -28,7 +29,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Name</th>
-                                        <th>Users</th>
+                                        <th>Joined</th>
                                         <th>Status</th>
                                         <th>Actions</th>
                                     </tr>
@@ -37,19 +38,16 @@
                                     <tr>
                                         <td style="width: 4%;">1</td>
                                         <td><strong>Mahisa Taruna</strong></td>
-                                    
-                                        <td>
-                                            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" itle="Lilian Fuller" >
-                                                    <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" />
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td><span class="badge bg-label-primary me-1">Active</span></td>
-                                        <td>
-                                            <a href="" class="btn rounded-pill btn-dark" data-bs-toggle="dropdown">
-                                                <i class="bx bx-edit-alt"></i> Edit
+                                        <td></td>
+                                        <td style="width: 4%;"><span class="badge bg-label-primary me-1">Active</span></td>
+                                        <td style="width: 5%">
+                                            <a class="btn btn-icon btn-success" href="">
+                                                <i class="tf-icons bx bx-edit text-white"></i>
                                             </a>
+                                            <a class="btn btn-icon btn-danger" href="">
+                                                <i class="tf-icons bx bx-trash text-white"></i>
+                                            </a>
+                                            
                                         </td>
                                     </tr>
                                 </tbody>

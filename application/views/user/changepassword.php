@@ -46,6 +46,22 @@
                                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                                 </div>    
                             </div>
+                            <div class="col-12 mb-4">
+                                <p class="fw-semibold mt-2">Password Requirements:</p>
+                                <ul class="ps-3 mb-0">
+                                    <li class="mb-1">
+                                        Minimum 8 characters long - the more, the better
+                                    </li>
+                                    <li class="mb-1">At least one lowercase character</li>
+                                    <li>At least one number, symbol, or whitespace character</li>
+                                </ul>
+                            </div>
+                            <div class="mt-2">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bx bx-memory-card me-1"></i>
+                                    Save changes
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>    
