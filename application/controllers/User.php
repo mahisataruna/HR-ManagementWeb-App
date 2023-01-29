@@ -65,7 +65,7 @@ class User extends CI_Controller
 			if(!password_verify($current_password, $data['user']['password'])) {
 				$this->session->set_flashdata('message', 
                         '<div class="alert alert-danger alert-dismissible" role="alert">
-                            <i class="bx bx-bell"></i> Current password wrong! 
+                            <i class="bx bx-fw bxs-bell bx-tada"></i> Current password wrong! 
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>');
 				redirect('user/changepassword');
@@ -73,7 +73,7 @@ class User extends CI_Controller
 				if($current_password == $new_password) {
 					$this->session->set_flashdata('message', 
                         '<div class="alert alert-danger alert-dismissible" role="alert">
-                            <i class="bx bx-bell"></i> Cannot same to current password! 
+                            <i class="bx bx-fw bxs-bell bx-tada"></i> Cannot same to current password! 
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>');
 					redirect('user/changepassword');
@@ -86,7 +86,7 @@ class User extends CI_Controller
 					$this->db->update('user');
                     $this->session->set_flashdata('message', 
                         '<div class="alert alert-primary alert-dismissible" role="alert">
-                            <i class="bx bx-bell"></i> Success change password. 
+                            <i class="bx bx-fw bxs-bell bx-tada"></i> Success change password. 
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>');
 					redirect('user/changepassword');

@@ -25,14 +25,11 @@
                           aria-haspopup="true"
                           aria-expanded="false"
                         >
-                          Currency
+                          Theme Mode
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-dollar"></i> USD</a>
-                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-euro"></i> Euro</a>
-                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-pound"></i> Pound</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-bitcoin"></i> Bitcoin</a>
+                          <a class="dropdown-item active" href="javascript:void(0);"><i class="bx bx-fw bxs-sun bx-tada"></i> Light Mode</a>
+                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-fw bx-moon bx-tada"></i> Dark Mode</a>
                         </div>
                       </div>
                       <a href="" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal"

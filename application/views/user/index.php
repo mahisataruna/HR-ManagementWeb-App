@@ -38,7 +38,7 @@
                         <div class="button-wrapper">
                           <h4 class="mb-2">
                             <?= $user['name']; ?> 
-                            <span class="badge badge-center rounded-pill bg-label-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="" data-bs-original-title="<i class='bx bx-bell bx-xs' ></i> <span> Your account is active and verified.</span>" aria-describedby="tooltip753344">
+                            <span class="badge badge-center rounded-pill bg-label-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="" data-bs-original-title="<i class='bx bx-fw bxs-bell bx-tada bx-xs' ></i> <span> Your account is active and verified.</span>" aria-describedby="tooltip753344">
                               <?php 
                                 if ($user['is_active'] == 1) {
                                   echo '<i class="bx bx-check text-primary"></i>';
@@ -272,7 +272,7 @@
                               data-bs-content="<p>This is a very beautiful popover, show some love.</p> <div class='d-flex justify-content-between'><button type='button' class='btn btn-sm btn-outline-secondary'>Skip</button><button type='button' class='btn btn-sm btn-primary'>Read More</button></div>"
                               title="Congratulation! 🎉"
                             >
-                              <span class="tf-icons bx bx-bell"></span>  
+                              <span class="bx bx-fw bx-bell bx-tada"></span>  
                               View Details
                             </button>
                           </div>

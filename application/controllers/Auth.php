@@ -42,7 +42,7 @@ class Auth extends CI_Controller
                     if ($user['role_id'] == 1 ) {
                         $this->session->set_flashdata('message', 
                         '<div class="alert alert-primary alert-dismissible" role="alert">
-                            <i class="bx bx-bell"></i> Hello, welcome to HR-Management Web App! 
+                            <i class="bx bx-fw bxs-bell bx-tada"></i> Hello, welcome to HR-Management Web App! 
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>'
                         );
@@ -55,7 +55,7 @@ class Auth extends CI_Controller
                     // Jika password salah
                     $this->session->set_flashdata('message', 
                     '<div class="alert alert-danger alert-dismissible" role="alert">
-                        <i class="bx bx-bell"></i> Wrong password! 
+                        <i class="bx bx-fw bxs-bell bx-tada"></i> Wrong password! 
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>'
                     );
@@ -65,7 +65,7 @@ class Auth extends CI_Controller
                 // Jika belum active
                 $this->session->set_flashdata('message', 
                 '<div class="alert alert-danger alert-dismissible" role="alert">
-                    <i class="bx bx-bell"></i> Your account not active! 
+                    <i class="bx bx-fw bxs-bell bx-tada"></i> Your account not active! 
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>'
                 );
@@ -75,7 +75,7 @@ class Auth extends CI_Controller
             // Gagalkan login jika user tidak ada
             $this->session->set_flashdata('message', 
             '<div class="alert alert-danger alert-dismissible" role="alert">
-                <i class="bx bx-bell"></i> Your email not registered! 
+                <i class="bx bx-fw bxs-bell bx-tada"></i> Your email not registered! 
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
              </div>'
             );
@@ -118,7 +118,7 @@ class Auth extends CI_Controller
             // Pesan Success
             $this->session->set_flashdata('message', 
             '<div class="alert alert-primary alert-dismissible" role="alert">
-                <i class="bx bx-bell"></i> Registered account success! 
+                <i class="bx bx-fw bxs-bell bx-tada"></i> Registered account success! 
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
              </div>'
             );
@@ -133,7 +133,7 @@ class Auth extends CI_Controller
         // Success and flashdata and redirect
 		$this->session->set_flashdata('message', 
             '<div class="alert alert-primary alert-dismissible" role="alert">
-                <i class="bx bx-bell"></i> Your logging out! 
+                <i class="bx bx-fw bxs-like bx-tada"></i> Your logging out! 
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
              </div>'
             );
