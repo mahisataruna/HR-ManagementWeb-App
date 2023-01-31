@@ -27,10 +27,10 @@
                 <div class="user-profile-info">
                   <h4>
                     <?= $user['name']; ?>
-                    <span class="badge badge-center rounded-pill bg-label-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="" data-bs-original-title="<i class='bx bx-fw bxs-bell bx-tada bx-xs' ></i> <span> Your account is active and verified.</span>" aria-describedby="tooltip753344">
+                    <span class="badge badge-center rounded-pill bg-primary" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="" data-bs-original-title="<i class='bx bx-fw bxs-bell bx-tada bx-xs' ></i> <span> Your account is active and verified.</span>" aria-describedby="tooltip753344">
                       <?php 
                         if ($user['is_active'] == 1) {
-                          echo '<i class="bx bx-check text-primary"></i>';
+                          echo '<i class="bx bx-check text-white"></i>';
                         } else {
                           echo '<i class="bx bx-close text-primary"></i>';
                         }
@@ -42,14 +42,14 @@
                       <i class="bx bx-fw bx-laptop"></i> UX Designer
                     </li>
                     <li class="list-inline-item fw-semibold">
-                      <i class="bx bx-map"></i> Vatican City
+                      <i class="bx bx-map"></i> Padang City, Indonesia
                     </li>
                     <li class="list-inline-item fw-semibold">
                       <i class="bx bx-calendar-alt"></i> Joined <?= date('d F Y', $user['date_created']); ?>
                     </li>
                   </ul>
                 </div>
-                <a href="javascript:void(0)" class="btn btn-primary text-nowrap">
+                <a href="<?= base_url('user/edit'); ?>" class="btn btn-primary text-nowrap">
                   <i class="bx bx-cog me-1"></i> Setting
                 </a>
               </div>

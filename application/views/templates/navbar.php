@@ -40,13 +40,14 @@
                     >Star</a
                   >
                 </li> -->
+                
                 <!-- Bell -->
-                <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                <li class="nav-item navbar-dropdown dropdown-notifications dropdown me-2">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     <i class="bx bx-bell bx-sm"></i>
                     <span class="badge bg-danger rounded-pill badge-notifications">5</span>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                  <ul class="dropdown-menu dropdown-menu-end">
                     <li class="dropdown-menu-header border-bottom">
                       <div class="dropdown-header d-flex align-items-center py-3">
                         <h5 class="text-body mb-0 me-auto">Notification</h5>

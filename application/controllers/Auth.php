@@ -48,7 +48,7 @@ class Auth extends CI_Controller
                         );
                         redirect('admin');
                     } else {
-                        redirect('user');
+                        redirect('home');
                     }
                     
                 } else {
